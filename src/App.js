@@ -15,6 +15,7 @@ function App() {
   const [isModalOpen, toggleModal] = UseToggle(false);
   return (
     <div className="App">
+      <>{process.env.REACT_APP_NAME}</>
       <input type="text" onChange={(e) => setName(e.target.value)} />
       {isSmallScreen ? "small" : "big"}
       <SearchComponent />
